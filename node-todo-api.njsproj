@@ -17,15 +17,35 @@
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
   <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
   <ItemGroup>
+    <Content Include=".gitignore">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="package.json" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="server\" />
     <Folder Include="playground\" />
     <Folder Include="node-todo-api" />
+    <Folder Include="server\db\" />
+    <Folder Include="server\models\" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="playground\mongodb-connect-update.js" />
+    <Compile Include="playground\mongodb-connect-delete.js" />
     <Compile Include="playground\mongodb-connect-find.js" />
     <Compile Include="playground\mongodb-connect.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="server\db\mongoose.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="server\models\todo.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="server\models\user.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="server\server.js">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
