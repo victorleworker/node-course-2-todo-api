@@ -23,6 +23,7 @@
     <Content Include="package.json" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="server\tests\" />
     <Folder Include="server\" />
     <Folder Include="playground\" />
     <Folder Include="node-todo-api" />
@@ -36,6 +37,9 @@
     <Compile Include="playground\mongodb-connect.js">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="playground\mongoose-queries.js">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="server\db\mongoose.js">
       <SubType>Code</SubType>
     </Compile>
@@ -46,6 +50,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="server\server.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="server\tests\server.test.js">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
